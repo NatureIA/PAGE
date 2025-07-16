@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #000022, #000000);
+  background: linear-gradient(135deg, #000000, #0a0a3d);
   color: white;
   text-align: center;
 }
@@ -72,20 +72,25 @@ h1 {
   background: #00cc6e;
 }
 
-.icones {
+.icones-box {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .icone-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #ddd;
+  color: #aaa;
   font-size: 0.95rem;
+}
+
+.icone-item i {
+  color: #00ff88;
+  font-size: 1.2rem;
 }
 
 footer {
