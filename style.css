@@ -1,103 +1,96 @@
-/* style.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
+  background: linear-gradient(to bottom, #000, #0a0a0a);
+  color: white;
   text-align: center;
 }
 
-.header {
-  padding: 80px 20px;
-  background: #000;
+.hero {
+  padding: 50px 20px;
 }
 
-.header h1 {
-  color: #ffd700;
-  font-size: 3rem;
+h1 {
+  color: #00ff88;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  animation: pulseText 2s infinite;
+  margin-bottom: 20px;
 }
 
-.header p {
-  color: #fff;
-  font-size: 1.2rem;
+.sub {
+  font-size: 1rem;
+  color: #ccc;
   margin-bottom: 30px;
 }
 
-.btn-cta {
+.preco-box {
+  background: #0d0d0d;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
   display: inline-block;
-  padding: 15px 40px;
-  border: 2px solid #ffd700;
-  color: #ffd700;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
-  animation: glowButton 1.5s infinite alternate;
-}
-
-.btn-cta:hover {
-  background: #ffd700;
-  color: #000;
-}
-
-.section {
-  padding: 60px 20px;
-  background: #111;
-}
-
-.section h2 {
-  color: #ffd700;
   margin-bottom: 30px;
-  font-size: 2rem;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.de {
+  color: #fff;
+  font-size: 1rem;
 }
 
-.card {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 8px;
-  width: 280px;
-  border: 1px solid #333;
+.corte {
+  text-decoration: line-through;
+  color: red;
 }
 
-.card h3 {
-  color: #ffd700;
-  margin-bottom: 10px;
+.por {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.preco {
+  color: #00ff88;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: brilho 1.5s infinite alternate;
+}
+
+.botao {
+  background: #00ff88;
+  color: #000;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.3s;
+  animation: brilho 2s infinite alternate;
+}
+
+.botao:hover {
+  background: #00cc6e;
+}
+
+.icones {
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
 }
 
 footer {
   background: #000;
   padding: 20px;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
-@keyframes pulseText {
+/* Animação de brilho */
+@keyframes brilho {
   0% {
-    color: #ffd700;
-  }
-  50% {
-    color: #fff;
+    box-shadow: 0 0 5px #00ff88;
   }
   100% {
-    color: #ffd700;
-  }
-}
-
-@keyframes glowButton {
-  0% {
-    box-shadow: 0 0 5px #ffd700;
-  }
-  100% {
-    box-shadow: 0 0 20px #ffd700;
+    box-shadow: 0 0 20px #00ff88;
   }
 }
